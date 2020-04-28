@@ -6,10 +6,12 @@ import android.os.Bundle;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-
+import java.text.CollationElementIterator;
 
 
 public class FamilyViewActivity extends Activity {
+
+
 
 
     public void onCreate(Bundle savedInstanceState){
@@ -24,9 +26,9 @@ public class FamilyViewActivity extends Activity {
         final ImageAdapter imageAdapter = new ImageAdapter(this);
 
         final ImageView imageView = (ImageView) findViewById(R.id.FamilyView);
-        final TextView names=(TextView)findViewById(R.id.txtName);
+        //final TextView names=(TextView)findViewById(R.id.FamilyView);
         imageView.setImageResource(imageAdapter.fPics[position]);
-        names.setText(imageAdapter.names[position]);
+        names.getItem(imageAdapter.names[position]);
 
     }
 }

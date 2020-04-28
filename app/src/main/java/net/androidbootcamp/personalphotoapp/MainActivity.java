@@ -26,9 +26,10 @@ public class MainActivity extends Activity {
         family.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Toast.makeText(MainActivity.this, "First Name: " + position, Toast.LENGTH_LONG).show();
+                Toast.makeText(MainActivity.this, position, Toast.LENGTH_LONG).show();
                 Intent o = new Intent(getApplicationContext(), FamilyViewActivity.class);
                 o.putExtra("id", position);
+
                 startActivity(o);
             }
         });

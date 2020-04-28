@@ -6,15 +6,9 @@
 
     <ImageView
         android:id="@+id/FamilyView"
-        android:layout_width="440dp"
-        android:layout_height="508dp"
-        android:contentDescription="@string/txtNames" />
-
-    <TextView
-        android:id="@+id/txtName"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="@string/hint"
-        android:textSize="30sp" />
+        android:layout_height="603dp"
+        android:contentDescription="@string/txtPersonal" />
+
 
 </LinearLayout>

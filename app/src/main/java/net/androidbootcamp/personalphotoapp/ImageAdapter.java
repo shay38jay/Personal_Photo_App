@@ -27,6 +27,7 @@ public class ImageAdapter extends BaseAdapter{
     }
     @Override
     public Object getItem(int position){
+
         return names[position];
     }
     @Override
@@ -48,8 +49,8 @@ public class ImageAdapter extends BaseAdapter{
         {
             imageView = (ImageView) convertView;
         }
-        TextView nametxt = (TextView) convertView.findViewById(R.id.txtName);
-        nametxt.setText(names[position]);
+        //TextView nametxt = (TextView) convertView.findViewById(R.id.txtName);
+        //nametxt.setText(names[position]);
         imageView.setImageResource(fPics[position]);
 
         return imageView;
